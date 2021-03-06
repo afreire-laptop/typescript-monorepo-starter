@@ -5,8 +5,7 @@ A convinient React App with a Backend-for-Frontend Monorepo
 ## Setup
 
 ### Prerequisites
-  - [Docker](https://www.docker.com/)
-  - Node.js - v10.15.0 
+  - Node.js - v14
   - Yarn
   - nvm
 
