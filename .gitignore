@@ -23,6 +23,7 @@ node_modules/
 .env.test
 .env.production
 .editorconfig
+.credentials
 
 # Build output
 build
@@ -33,3 +34,7 @@ dist
 
 # Local configuration files
 *.local.yaml
+
+# IntelliJ IDEA metadata files
+.idea/
+*.iml
