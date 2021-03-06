@@ -1,0 +1,36 @@
+{
+  "name": "typescript-monorepo-starter",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Monorepo with TypeScript, React App and Express BFF",
+  "engines": {
+    "node": "14"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "lerna": "^4.0.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "bootstrap": "lerna run bootstrap --use-workspaces",
+    "start": "lerna run start",
+    "start:app": "yarn workspace app start --parallel",
+    "start:bff": "yarn workspace bff start --parallel",
+    "build": "lerna run build",
+    "clean": "lerna run clean",
+    "test": "lerna run test -- --coverage"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

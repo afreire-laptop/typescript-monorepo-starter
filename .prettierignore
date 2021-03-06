@@ -1,0 +1,27 @@
+# Thumbs Files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.ejs
+*.md
+*.env
+*.lock
+
+# testing
+coverage
+
+# Dependencies Folder
+node_modules
+
+# Dist Folders
+public
+dist
+build
+
+#config
+config
+scripts
+
+# Log error
+*.log
